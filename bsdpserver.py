@@ -1074,7 +1074,7 @@ def main():
                 # If the vendor_encapsulated_options BSDP type is 2, we process
                 #   the packet as a BSDP[SELECT] request
                 elif packet.GetOption('vendor_encapsulated_options')[2] == 2:
-                    logging.debug'-=============================[-> BSDP SELECT<-]=======================================-')
+                    logging.debug('-=============================[-> BSDP SELECT<-]=======================================-')
                     # logging.debug('Got BSDP INFORM[SELECT] packet: ')
 
 
@@ -1090,7 +1090,7 @@ def main():
                 elif len(packet.GetOption('vendor_encapsulated_options')) <= 7:
                     pass
 
-                logging.debug'-=======================================================================================-')
+                logging.debug('-=======================================================================================-')
         except:
             # Error? No worries, keep going.
             pass
